@@ -60,8 +60,7 @@ CoMM <- function(Model = "Individual", file1 = NULL, file2 = NULL, file3 = NULL,
         Cov2 = ""
       }
       .Call('_CoMM_CoMM_testing_run_mt', PACKAGE = 'CoMM', file1, file3, file2, Cov1, Cov2, whCol, bw, coreNum)
-    }
-    if (paral == FALSE){
+    }else{
       if (is.null(Cov1)){
         Cov1 = ""
       }
@@ -90,9 +89,7 @@ CoMM <- function(Model = "Individual", file1 = NULL, file2 = NULL, file3 = NULL,
         Cov1 = ""
       }
      .Call('_CoMM_CoMM_S2_paral_testing', PACKAGE = 'CoMM', file1, file6, R2, file2, Cov1, bw, lam, coreNum)
-    }
-    
-    if (paral == FALSE){
+    }else{
       if (is.null(Cov1)){
         Cov1 = ""
       }
@@ -117,9 +114,7 @@ CoMM <- function(Model = "Individual", file1 = NULL, file2 = NULL, file3 = NULL,
     }
     if (paral == TRUE){
       .Call('_CoMM_CoMM_S4_testing_mt', PACKAGE = 'CoMM', file4, file6, R1, file5, R2, 1, lam, coreNum)
-    }
-    
-    if (paral == FALSE){
+    }else{
       .Call('_CoMM_CoMM_S4_testing', PACKAGE = 'CoMM', file4, file6, R1, file5, R2, 1, lam)
     }
     
@@ -138,9 +133,7 @@ CoMM <- function(Model = "Individual", file1 = NULL, file2 = NULL, file3 = NULL,
     }
     if (paral == TRUE){
       .Call('_CoMM_CoMM_S4_testing_mt', PACKAGE = 'CoMM', file4, file6, R1, file5, R1, 1, lam, coreNum)
-    }
-    
-    if (paral == FALSE){
+    }else{
       .Call('_CoMM_CoMM_S4_testing', PACKAGE = 'CoMM', file4, file6, R1, file5, R1, 1, lam)
     }
   }else{
