@@ -53,4 +53,8 @@ This package is developed and maintained by Yi Yang (gmsyany@nus.edu.sg) and Jin
 
 For an example of typical CoMM usage, please see our [Package vignette](https://shufeyangyi2015310117.github.io/CoMM/) for a demonstration and overview of the functions included in CoMM.
 
+# Issues
+
+1. Prior to installation of CoMM on windows, please install Rtools.
+2. Prior to the usage of CoMM, please check the fam file of eQTL data has no other types of non-SNP genetic variants such as insertions, deletions and copy number variants.
 
