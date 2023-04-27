@@ -57,4 +57,5 @@ For an example of typical CoMM usage, please see our [Package vignette](https://
 
 1. Prior to installation of CoMM on windows, please install Rtools.
 2. Prior to the usage of CoMM, please check the fam file of eQTL data has no other types of non-SNP genetic variants such as insertions, deletions and copy number variants.
+3. For CoMM-S4, we briefly explain the output, in the dataframe of param0, the first column is test statistics, the second column is estimation of alpha(effect size), the third column is number of SNPs.
 
