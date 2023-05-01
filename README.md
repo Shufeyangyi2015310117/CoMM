@@ -57,5 +57,6 @@ For an example of typical CoMM usage, please see our [Package vignette](https://
 
 1. Prior to installation of CoMM on windows, please install Rtools.
 2. Prior to the usage of CoMM, please check the bim file of eQTL data and reference data has no other types of non-SNP genetic variants such as insertions, deletions and copy number variants.
-3. For CoMM-S4, we briefly explain the output, in the dataframe of param0, the first column is test statistics(likelihood ratio test statistics), the second column is estimation of alpha(effect size), the third column is the number of SNPs in each gene.
+3. For CoMM-S4, we briefly explain the output, in the dataframe of param0, the first column is test statistics(likelihood ratio test statistics), the second column is estimator of alpha(effect size), the third column is the number of SNPs in each gene.
+4. For CoMM-S2, we briefly explain the output, in the dataframe of param0, the first column is the estimator of variance in prior distribution, the second column is the estimator of variance for error associated with the gene expression levels, the fourth column is the chi-squared statistics, the fifth column is the estimator of alpha, the sixth column is the number of SNPs for each gene and the seventh column is the estimator of heritability.
 
